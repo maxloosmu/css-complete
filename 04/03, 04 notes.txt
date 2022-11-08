@@ -1,0 +1,41 @@
+Grouping Pseudo classes
+.main-nav__item a:hover,
+.main-nav__item a:active {
+  color: white;
+}
+
+Pseudo elements
+p::first-letter {
+  color: red;
+  font-size: 20px;
+}
+
+.main-nav__item a::after {
+  content: " (Link)";
+  color: red;
+}
+
+BEM way of naming classes
+
+Specificity: Style definitions at the bottom of css page will have priority if priority level is same
+
+This works:
+a.active {}
+a#some-id {}
+
+div {
+  color: red !important;
+}
+!important is high priority, rarely used.  
+
+a:not(.active) {
+  color: blue;
+}
+:not() is usually not necessary and harder to check or compute.  It is also experimental when it comes to class combinations.  
+
+Use
+https://caniuse.com/
+To check for browser compatibility and support with styles
+
+
+

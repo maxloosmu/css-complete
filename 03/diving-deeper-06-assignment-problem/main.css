@@ -1,0 +1,28 @@
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing */
+* {
+  box-sizing: border-box;
+}
+.nice-box {
+  padding: 5px 6px 7px 8px;
+  border: 2px solid blue;
+  margin: 5px 4px 3px 2px;
+  display: inline-block;
+}
+
+.first-box {
+  /* height: 100vh; */
+  height: 300px;
+  width: 50%;
+  visibility: hidden;
+}
+
+.last-div:hover,
+.last-div::after {
+  background-color: yellow;
+  content: " (LAST div)";
+  border-radius: 8px;
+}
+
+/* .last-div::after {
+  content: " (LAST div)";
+} */
