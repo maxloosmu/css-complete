@@ -1,0 +1,47 @@
+font: inherit
+
+.button:focus {
+  outline: none;
+}
+
+list-style: none;
+
+text-decoration: none;
+
+vertical-align: top;
+
+border-radius: 50%;
+
+margin: auto;
+
+inheritance is overwritten by directly assigned styles.  
+
+width: calc(100% - 74px);
+
+later styles will override earlier styles.  
+
+.package a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding: 32px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+#free {
+    background: rgba(234, 252, 237, 0.95);
+    float: right;
+    border-right: none;
+    border-left: 4px solid #0e4f1f;
+    text-align: right;
+}
+
+id selectors have higher specificity than class or pseudo class selectors.  
+
+
+
+
+
